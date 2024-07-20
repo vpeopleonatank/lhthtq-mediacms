@@ -10,7 +10,7 @@ module.exports = {
     hideRegister: false,
   },
   sideBar: {
-    hideHomeLink: true,
+    hideHomeLink: false,
     hideTagsLink: true,
     hideCategoriesLink: false,
   },
