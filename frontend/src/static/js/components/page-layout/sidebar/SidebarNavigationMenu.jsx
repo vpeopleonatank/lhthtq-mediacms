@@ -17,9 +17,9 @@ export function SidebarNavigationMenu() {
   function formatItems(items) {
     return items.map((item) => {
       const url = urlParse(item.link);
-      console.log(item.link)
-      console.log(window.location.href)
-      const active = currentHostPath === url.host + url.pathname && currentUrl.query === url.query;
+      console.log(currentUrl.query)
+      console.log(url.query)
+      const active = currentHostPath === url.host + url.pathname && decodeURI(currentUrl.query) === url.query;
 
       return {
         active,
