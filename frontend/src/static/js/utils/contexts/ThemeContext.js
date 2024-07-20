@@ -11,17 +11,19 @@ function initLogo(logo) {
   let dark = null;
 
   if (void 0 !== logo.darkMode) {
-    if (supportsSvgAsImg() && void 0 !== logo.darkMode.svg && '' !== logo.darkMode.svg) {
-      dark = logo.darkMode.svg;
-    } else if (void 0 !== logo.darkMode.img && '' !== logo.darkMode.img) {
+    // if (supportsSvgAsImg() && void 0 !== logo.darkMode.svg && '' !== logo.darkMode.svg) {
+    //   dark = logo.darkMode.svg;
+    // } else 
+    if (void 0 !== logo.darkMode.img && '' !== logo.darkMode.img) {
       dark = logo.darkMode.img;
     }
   }
 
   if (void 0 !== logo.lightMode) {
-    if (supportsSvgAsImg() && void 0 !== logo.lightMode.svg && '' !== logo.lightMode.svg) {
-      light = logo.lightMode.svg;
-    } else if (void 0 !== logo.lightMode.img && '' !== logo.lightMode.img) {
+    // if (supportsSvgAsImg() && void 0 !== logo.lightMode.svg && '' !== logo.lightMode.svg) {
+    //   light = logo.lightMode.svg;
+    // } else 
+    if (void 0 !== logo.lightMode.img && '' !== logo.lightMode.img) {
       light = logo.lightMode.img;
     }
   }
