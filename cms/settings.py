@@ -9,11 +9,11 @@ DEBUG = False
 PORTAL_NAME = "MediaCMS"
 PORTAL_DESCRIPTION = ""
 LANGUAGE_CODE = "en-us"
-TIME_ZONE = "Europe/London"
+TIME_ZONE = "Asia/Ho_Chi_Minh"
 
 # who can add media
 # valid options include 'all', 'email_verified', 'advancedUser'
-CAN_ADD_MEDIA = "all"
+CAN_ADD_MEDIA = "advancedUser"
 
 # valid choices here are 'public', 'private', 'unlisted
 PORTAL_WORKFLOW = "public"
@@ -27,12 +27,12 @@ DEFAULT_THEME = "light"
 # this is only for the static files, as fonts/css/js files loaded from CDNs
 # not for user uploaded media!
 LOAD_FROM_CDN = False
-LOGIN_ALLOWED = True  # whether the login button appears
-REGISTER_ALLOWED = True  # whether the register button appears
+LOGIN_ALLOWED = False  # whether the login button appears
+REGISTER_ALLOWED = False  # whether the register button appears
 UPLOAD_MEDIA_ALLOWED = True  # whether the upload media button appears
-CAN_LIKE_MEDIA = True  # whether the like media appears
-CAN_DISLIKE_MEDIA = True  # whether the dislike media appears
-CAN_REPORT_MEDIA = True  # whether the report media appears
+CAN_LIKE_MEDIA = False  # whether the like media appears
+CAN_DISLIKE_MEDIA = False  # whether the dislike media appears
+CAN_REPORT_MEDIA = False  # whether the report media appears
 CAN_SHARE_MEDIA = True  # whether the share media appears
 # how many times an item need be reported
 # to get to private state automatically
@@ -122,7 +122,7 @@ ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
 ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 20
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 5
 # registration won't be open, might also consider to remove links for register
-USERS_CAN_SELF_REGISTER = True
+USERS_CAN_SELF_REGISTER = False
 
 RESTRICTED_DOMAINS_FOR_USER_REGISTRATION = ["xxx.com", "emaildomainwhatever.com"]
 
