@@ -21,18 +21,18 @@ module.exports = {
     },
   },
   pages: {
-    // latest: {
-    //   title: 'Recent uploads',
-    // },
-    // featured: {
-    //   title: 'Featured',
-    // },
-    // recommended: {
-    //   title: 'Recommended',
-    // },
-    // members: {
-    //   title: 'Members',
-    // },
+    latest: {
+      title: 'Recent uploads',
+    },
+    featured: {
+      title: 'Featured',
+    },
+    recommended: {
+      title: 'Recommended',
+    },
+    members: {
+      title: 'Members',
+    },
   },
   // userPages: {
   //   liked: {
