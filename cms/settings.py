@@ -71,7 +71,7 @@ EMAIL_PORT = 587
 ADMIN_EMAIL_LIST = ["info@mediacms.io"]
 
 
-MEDIA_IS_REVIEWED = False  # whether an admin needs to review a media file.
+MEDIA_IS_REVIEWED = True  # whether an admin needs to review a media file.
 # By default consider this is not needed.
 # If set to False, then each new media need be reviewed otherwise
 # it won't appear on public listings
@@ -490,7 +490,7 @@ if GLOBAL_LOGIN_REQUIRED:
     ]
 
 # if True, only show original, don't perform any action on videos
-DO_NOT_TRANSCODE_VIDEO = False
+DO_NOT_TRANSCODE_VIDEO = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
