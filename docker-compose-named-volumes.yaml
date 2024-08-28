@@ -2,7 +2,7 @@ version: "3"
 
 services:
   migrations:
-    image: mediacms/mediacms:latest
+    image: vpeopleonatank/nlty-mediacms:latest
     volumes:
       - ./deploy/docker/local_settings.py:/home/mediacms.io/mediacms/deploy/docker/local_settings.py
     environment:
@@ -22,7 +22,7 @@ services:
       db:
         condition: service_healthy
   web:
-    image: mediacms/mediacms:latest
+    image: vpeopleonatank/nlty-mediacms:latest
     deploy:
       replicas: 1
     ports:
@@ -39,7 +39,7 @@ services:
     depends_on:
       - migrations
   celery_beat:
-    image: mediacms/mediacms:latest
+    image: vpeopleonatank/nlty-mediacms:latest
     volumes:
       - ./deploy/docker/local_settings.py:/home/mediacms.io/mediacms/deploy/docker/local_settings.py
     environment:
@@ -51,7 +51,7 @@ services:
     depends_on:
       - redis
   celery_worker:
-    image: mediacms/mediacms:latest
+    image: vpeopleonatank/nlty-mediacms:latest
     deploy:
       replicas: 1
     volumes:
